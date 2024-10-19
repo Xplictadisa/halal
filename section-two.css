@@ -1,0 +1,33 @@
+.section-two{
+background-color: white;
+}
+
+.section2-container{
+max-width: 1024px;
+padding: 50px 40px 40px 40px;
+margin: auto;
+/* border: 2px solid purple; */
+}
+.section2-container .why h1{
+text-align: center;
+margin-bottom: 30px;
+}
+
+.section2-container .connect{
+display: flex;
+gap: 50px;
+}
+
+.connect > div {
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.connect > div img{
+object-fit: contain;
+width: 70px;
+align-self: center;
+
+}

@@ -1,0 +1,126 @@
+.section4 {
+max-width: 1024px;
+padding: 50px 40px 40px 40px;
+margin: auto;
+/* border: 2px solid rgb(71, 73, 68); */
+display: flex;
+gap: 70px;
+}
+
+.section4 .one,
+.section4 .two{
+width: 50%;
+}
+
+.section4 .one{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.section4 .two img{
+width: 100%;
+}
+
+.section4 .one h1 {
+font-family: georgia;
+font-weight: 400;
+font-size: 30px;
+}
+
+.section4 .one p{
+font-weight: 500;
+font-size: 20px;
+}
+
+.section4 .one h4{
+font-size: 15px;
+font-weight: 400;
+}
+
+.section4 .one button {
+ align-self: start;
+ padding: 15px;
+ background-color: black;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.section4 .one button:hover{
+opacity: 0.7;
+}
+
+.section5{
+ max-width: 1024px;
+padding: 40px;
+margin: auto;
+background-color: black;
+color: white;
+border-radius: 20px;
+display: flex;
+justify-content: space-between;
+}
+
+.section5 .one{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.section5 .one h1{
+font-family: georgia;
+font-weight: 400;
+font-size: 40px;
+}
+
+.section5 .one p{
+font-family: "inter";
+font-weight: 400;
+font-size: 15px;
+opacity: 0.75;
+}
+
+.section5 .two {
+display: flex;
+align-items: center;
+align-self: center;
+gap: 20px;
+}
+
+.section5 .two button{
+align-self: start;
+padding: 12px;
+border: none;
+border-radius: 5px;
+background: white;
+color: black;
+cursor: pointer;
+}
+
+.section5 .two button:hover{
+opacity: 0.7;
+}
+
+/* responsive */
+@media screen and (max-width: 700px) {
+   .section4 .two {
+    display: none;
+   }
+   .section4 .one{
+    width: 100%;
+    text-align: center;
+   } 
+   .section4 .one button{
+    margin: auto;
+   }
+
+   .section5 {
+    flex-direction: column;
+    gap: 20px;
+   }
+   .section5 .one{
+    align-self: center;
+   }
+}
