@@ -97,3 +97,12 @@ padding-bottom: 30px;
   }
 
 }
+
+/* for mobile */
+
+@media screen and (max-width: 425px) {
+ .stream .left h1 {
+  font-size: 35px;
+  line-height: 40px;
+ }
+}

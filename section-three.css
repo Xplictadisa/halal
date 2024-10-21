@@ -77,7 +77,27 @@ margin-right: 5px;
     } 
     .section3 .graph .payroll{
         flex-direction: row;
+        flex-wrap: wrap;
         align-self: start;
         width: 100%;
     }
+}
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+  .section3 {
+    background-color: #FFF2E9;
+    /* border: 1px solid yellow; */
+  } 
+  .section3 > h1,
+  .section3 > p{
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+  }
+  .section3 .graph .payroll{
+    flex-direction: column;
+    align-self: start;
+    width: 100%;
+  }
 }

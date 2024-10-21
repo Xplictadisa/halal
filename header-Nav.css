@@ -83,6 +83,10 @@ nav .demo button:hover {
 opacity: 0.7;
 }
 
+nav .demo .temp{
+    display: none;
+}
+
 
 /* responsiveness  */
 @media screen and (max-width: 700px) {
@@ -99,11 +103,10 @@ display: flex;
 flex-direction: column;
 align-items: start;
 justify-content: start;
-max-width: 200px;
+width: 200px;
 margin: 0;
 gap: 30px;
 height: 300px;
-overflow-y: hidden;
 background-color: aliceblue;
 } 
 
@@ -121,4 +124,45 @@ gap: 15px;
 header .left {
  display: block;
 }
+}
+
+/* responsiveness for mobile */
+
+@media screen and (max-width: 425px) {
+   
+    nav {
+       /* border: 1px solid green; */
+       width: 100%;
+       height: fit-content;
+       padding: 10px;
+       background-color: #FFF2E9;
+    }
+    nav .logo{
+        align-self: center;
+        margin-bottom: -10px;
+    }
+    nav > ul {
+        /* border: 1px solid purple; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav > ul li {
+     width: 100%;
+     text-align: center;
+     background-color: #f7c8a6;
+     color: black;
+     padding: 10px;
+     border-radius: 10px;
+    }
+
+    nav .demo .temp{
+    display: inline-block;
+    }
+    nav .demo{
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    }
 }
